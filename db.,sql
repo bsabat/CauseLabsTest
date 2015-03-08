@@ -1,0 +1,20 @@
+CREATE TABLE `customer2` (
+	`id`	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	`nameFirst`	TEXT,
+	`nameLast`	TEXT NOT NULL,
+	`email`	TEXT NOT NULL,
+	`address`	TEXT,
+	`phone`	TEXT,
+	`twitter`	TEXT,
+	`facebook`	TEXT
+);
+
+CREATE INDEX 'name' ON customer(nameLast);
+CREATE INDEX 'email' ON customer(email);
+
+
+INSERT INTO `customer` VALUES (1,'b','b','b@b.com','q','df',NULL,NULL);
+INSERT INTO `customer` VALUES (2,'Brian','sasfdfgfdfg','b@b.com','2133 street','4657678799','sasfdfgfdfg','sasfdfgfdfg');
+INSERT INTO `customer` VALUES (3,'sdd','dfsdf','d@dfg.com','sdfdgf','234345456456','sdfgd','DFDF');
+INSERT INTO `customer` VALUES (4,'Brian','sasfdfgfdfg','bdfgdfgfg@b.com','2133 street','4657678799','sasfdfgfdfg','sasfdfgfdfg');
+INSERT INTO `customer` VALUES (5,'Br','Sa','bs@bs.com',NULL,NULL,'Sa','Sa');x
